@@ -37,7 +37,7 @@ client.on("ready", async() => {
             status: 'dnd'
         })        
     })
-
+//message create
 client.on("messageCreate", message => {
         //console.log(message.content);
         const channelwl = message.guild.channels.cache.get('957291147343040552')
