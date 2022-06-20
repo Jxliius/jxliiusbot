@@ -85,7 +85,7 @@ client.on("messageCreate", message => {
                 }
             }
             if(message.channel == channelart){
-                message.react()
+                message.react('👍')
             }
 })
    
