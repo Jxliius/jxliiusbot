@@ -95,6 +95,7 @@ client.on("messageCreate", message => {
                     .then(() => message.react('👎'))
                 }
             }
+        })
    
 
 
