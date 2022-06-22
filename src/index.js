@@ -94,6 +94,9 @@ client.on("messageCreate", message => {
                     .then(() => message.react('🤷‍♀️'))
                     .then(() => message.react('👎'))
                 }
+                else{
+                    message.delete()
+                }
             }
         })
    
