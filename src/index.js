@@ -43,6 +43,7 @@ client.on("messageCreate", message => {
         const channelv = message.guild.channels.cache.get('813166808391483412')
         const channellf = message.guild.channels.cache.get('813322261795962940')
         const channelart = message.guild.channels.cache.get('986725464808755330')
+        const channelwlms2 = message.guild.channels.cache.get('988931917653086258')
         if(!(message.channel == channelwl)|| (message.channel == channelv)||(message.channel == channellf)){
             if(message.content == "<@964529781557329960>"){
                 const embed = new MessageEmbed()
@@ -87,6 +88,12 @@ client.on("messageCreate", message => {
             if(message.channel == channelart){
                 message.react('👍')
             }
+            if(message.channel == channelwlms2){
+                if(message.content.startsWith('W/L') || message.content.startsWith('w/l')){
+                    message.react('👍')
+                    .then(() => message.react('🤷‍♀️'))
+                    .then(() => message.react('👎'))
+                }
 })
    
 
