@@ -30,8 +30,8 @@ client.on("ready", async() => {
         client.user.setPresence({
             activities:[
                 {
-                    name: 'Visual Studio Code',
-                    type: 'PLAYING'
+                    name: 'Skrizzels Palast',
+                    type: 'WATCHING'
                 }
             ],
             status: 'dnd'
