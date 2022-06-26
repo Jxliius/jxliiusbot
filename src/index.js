@@ -30,7 +30,7 @@ client.on("ready", async() => {
         client.user.setPresence({
             activities:[
                 {
-                    name: 'Skrizzel beim Duschen zu',
+                    name: 'Skrizzzel beim Duschen zu',
                     type: 'WATCHING'
                 }
             ],

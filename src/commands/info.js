@@ -32,7 +32,10 @@ module.exports = {
             }
             case "member":{
                 const member = interaction.options.getMember("member")
-                console.log(member)
+                if(member.id == '731607711153651853'){
+                    interaction.reply("Dieser Befehl kann bei diesem User nicht gentutz werden")
+                    break
+                }
                 interaction.reply({embeds: [
                     new MessageEmbed()
                     .setColor('RED')
