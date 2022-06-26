@@ -32,6 +32,7 @@ module.exports = {
             }
             case "member":{
                 const member = interaction.options.getMember("member")
+                console.log(member)
                 interaction.reply({embeds: [
                     new MessageEmbed()
                     .setColor('RED')
