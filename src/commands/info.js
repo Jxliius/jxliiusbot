@@ -32,7 +32,7 @@ module.exports = {
             }
             case "member":{
                 const member = interaction.options.getMember("member")
-                if(member.id == '731607711153651853'){
+                if(member.user.id == '731607711153651853'){
                     interaction.reply("Dieser Befehl kann bei diesem User nicht gentutz werden")
                     break
                 }
