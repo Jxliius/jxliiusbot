@@ -38,7 +38,6 @@ client.on("ready", async() => {
         })        
     })
 client.on("messageCreate", message => {
-        //console.log(message.content);
         const channelwl = message.guild.channels.cache.get('957291147343040552')
         const channelv = message.guild.channels.cache.get('813166808391483412')
         const channellf = message.guild.channels.cache.get('813322261795962940')
