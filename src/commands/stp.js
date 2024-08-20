@@ -41,9 +41,19 @@ module.exports = {
                 const Finish = new MessageEmbed()
                 .setTitle(erg)
                 .setDescription(`${emoji} vs ${botAuswahl}`)
-                .setColor("RANDOM")
                 .addField('Spieler', interaction.user.tag)
                 .setTimestamp()
+
+
+                if(erg == "Du hast Gewonnen!"){
+                    Finish.setColor("GREEN")
+                }
+                else if(erg == "Du hast verloren, versuche es erneut!"){
+                    Finish.setColor("RED")
+                }
+                else{
+                    Finish.setColor("RANDOM")
+                }
 
                 nachricht.reply({
                     embeds:[Finish]
